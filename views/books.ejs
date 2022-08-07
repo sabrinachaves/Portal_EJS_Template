@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %>  </title>
+</head>
+<body>
+    <header>
+        <%- include('header')  %> 
+    </header>
+    <h1>Livros favoritos</h1>
+    <p>Os livros escolhidos passam por romance, fantasia e mistério. Aproveite!</p>   
+    <div class="choosen">
+        <div class="block1">
+            <div class="book size">
+                <img src="/images/batalha.jpg" alt="Livro A Batalha do Labirinto" id="batalha" class="book-size">
+                <label for="batalha">A Batalha do Labirinto - Rick Riordan</label>
+            </div>
+            <div class="book size">
+                <img src="/images/espera.jpg" alt="Livro Espera" id="espera" class="book-size">
+                <label for="espera">Espera - Maggie Stiefvater</label>
+            </div>
+            <div class="book size">
+                <img src="/images/wonder.jpg" alt="Livro Wonder" id="wonder" class="book-size">
+                <label for="wonder">Wonder - R.J. Palacio</label>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="book size">
+                <img src="/images/princesa.jpg" alt="Livro Princesa Mecânica" id="princesa" class="book-size">
+                <label for="princesa">Princesa Mecânica - Cassandra Clare</label>
+            </div>
+            <div class="book size">
+                <img src="/images/naosobrou.jpg" alt="Livro E não sobrou nenhum" id="naoSobrou" class="book-size">
+                <label for="princesa">E não sobrou nenhum - Agatha Christie</label>
+            </div>
+            <div class="book size">
+                <img src="/images/filha.jpg" alt="Livro Filha da tempestade" id="filha" class="book-size">
+                <label for="filha">Filha da Tempestade - Richelle Mead</label>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <%- include('footer')  %> 
+    </footer>
+</body>
+</html>

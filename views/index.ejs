@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title><%= title %>  </title>
+</head>
+<body>
+    <header>
+        <%- include('header')  %> 
+    </header>
+    <h1>Destaques da Semana</h1>
+    <p>Aqui encontram-se os escolhidos da semana, para acessar os favoritos, entre nas respectivas páginas!</p>
+    <p>Aproveite as recomendações</p>
+    <div class="highlights">
+        <div class="book size">
+            <img src="/images/essencialismo.jpg" alt="Livro Essencialismo" id="essencialismo">
+            <label for="essencialismo">Essenciamo - Greg McKeown</label>
+        </div>
+        <div class="tv-show size">
+            <img src="/images/Rebelde.jpg" alt="Série Rebelde" id="rebelde">
+            <label for="rebelde">Rebelde - Netflix</label>
+        </div>
+    </div>
+    <footer>
+        <%- include('footer')  %> 
+    </footer>
+</body>
+</html>

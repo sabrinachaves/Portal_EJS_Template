@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %>  </title>
+</head>
+<body>
+    <header>
+        <%- include('header')  %> 
+    </header>
+    <h1>Séries favoritas</h1>
+    <p>As séries escolhidas são de diferentes gêneros. Aproveite!</p>   
+    <div class="choosen">
+        <div class="block1">
+            <div class="book size">
+                <img src="/images/theboys.webp" alt="Série The Boys" id="the-boys" class="book-size">
+                <label for="the-boys">The Boys - Prime Video</label>
+            </div>
+            <div class="book size">
+                <img src="/images/supernatural.jpg" alt="Série Supernatural" id="supernatural" class="book-size">
+                <label for="supernatural">Supernatural - Prime Video</label>
+            </div>
+            <div class="book size">
+                <img src="/images/tvd.jpg" alt="Série The Vampire Diaries" id="tvd" class="book-size">
+                <label for="tvd">The Vampire Diaries - Prime Video</label>
+            </div>
+        </div>
+        <div class="block2">
+            <div class="book size">
+                <img src="/images/himym.jpg" alt="Livro How I Met Your Mother" id="himym" class="book-size">
+                <label for="himym">How I met your mother</label>
+            </div>
+            <div class="book size">
+                <img src="/images/slasher.png" alt="Série Slasher" id="slasher" class="book-size">
+                <label for="slasher">Série Slasher - Netflix</label>
+            </div>
+            <div class="book size">
+                <img src="/images/scream.jpg" alt="Série Scream" id="scream" class="book-size">
+                <label for="scream">Série Scream - Netflix</label>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <%- include('footer')  %> 
+    </footer>
+</body>
+</html>

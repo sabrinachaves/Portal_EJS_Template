@@ -1,0 +1,56 @@
+body{
+    background-color: #FFFAF0;
+}
+
+h1{
+    text-align: center;
+    padding: 5% 0;
+    font-family: 'Manrope', sans-serif;
+    color: #DC143C;;
+}
+
+p, label{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 5%;
+    text-align: center;
+}
+
+label{
+    width: 100%; 
+    margin-left: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.size{
+    height: 5%;
+    padding: 5% 15%;
+}
+
+.highlights{
+    display: flex;
+    justify-content: space-between;
+}
+
+#essencialismo, #rebelde {
+    height: 35vw;
+}
+
+@media(max-width: 700px){
+    #essencialismo, #rebelde {
+        width: 90%;
+        height: auto;
+        padding: 10% 0 0;
+    }
+
+
+    .highlights{
+        flex-wrap: wrap;
+    }
+
+    .size{
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
